@@ -14,7 +14,7 @@ df.head()
 
 
 import numpy as np
-df['Timemgnt'] = np.where((df['exercise']>3) & (df['hours']>7),
+df['Timemgnt'] = np.where((df['exercise']>3) & (df['hours']>17),
 'Busy', 'Not busy')
 df.tail(10)
 
